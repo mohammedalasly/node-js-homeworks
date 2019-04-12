@@ -16,12 +16,12 @@ function handelRequest(request, response) {
     }
     else if (request.url === "/subtract") {
         state--;
-        response.writeHead(200, { "Content-Type": "application/json" })
+        response.writeHead(200, { "Content-Type": "text/plain" })
         response.end(state.toString());
     }
     else if (request.url === "/reset") {
-        state;
-        response.writeHead(200, { "Content-Type": "application/json" })
+        state = 10;
+        response.writeHead(200, { "Content-Type": "text/plain" })
         response.end(state.toString());
     }
     else if (request.url === "/bad") {

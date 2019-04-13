@@ -26,7 +26,7 @@ function handelRequest(request, response) {
     }
     else if (request.url === "/bad") {
         response.writeHead(404, { "Content-Type": "text/html" })
-        response.end("<img src ='https://image.shutterstock.com/image-illustration/boy-urinating-450w-343936052.jpg' alt = 'pee'/>");
+        response.end("<img src ='https://image.shutterstock.com/image-illustration/boy-urinating-450w-343936052.jpg' alt = 'pee'/><h1><mark>Oops! Page Not Found.</mark></h1>");
     }
 
 }
